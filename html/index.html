@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Translator </title>
+  <link rel="stylesheet" href="https;//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/skeleton.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/fontawesome.min.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/normalize.css"> -->
+  <script type="text/javascript" language="javascript" src="./js/script.js" defer></script>
+  <!-- EelのJSの読み込み -->
+  <script type="text/javascript" src="/eel.js"></script>
+</head>
+
+<body>
+  <header class="header">
+      <h1>Translator</h1>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="five columns">
+        <span>言語　</span>
+        <select id="select_lang_src" onchange="lang_change();">
+        </select>
+        <textarea id="before_textarea" class="u-full-width" rows="10"></textarea>
+      </div>
+
+      <div class="two columns btndiv">
+        <button type="button" id="btn_translate" class="button-primary" onclick="btn_translate_click();">翻訳 ≫</button>
+      </div>
+
+      <div class="five columns">
+        <span>言語　</span>
+        <select id="select_lang_dest">
+        </select>
+        <textarea id="after_textarea" class="u-full-width" rows="10" readonly></textarea>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+  </footer>
+ 
+</body>
+</html>
